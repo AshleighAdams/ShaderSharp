@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ShaderSharp.Shaders
 {
@@ -35,13 +35,13 @@ namespace ShaderSharp.Shaders
 		public int Location;
 		public LayoutAttribute(Layout kind)
 		{
-			this.Kind = kind;
-			this.Location = -1;
+			Kind = kind;
+			Location = -1;
 		}
 		public LayoutAttribute(int location)
 		{
-			this.Kind = Layout.Explicit;
-			this.Location = location;
+			Kind = Layout.Explicit;
+			Location = location;
 		}
 	}
 
@@ -54,7 +54,7 @@ namespace ShaderSharp.Shaders
 		public ExtensionKind Kind;
 		public ExtensionAttribute(ExtensionKind kind)
 		{
-			this.Kind = kind;
+			Kind = kind;
 		}
 	}
 
@@ -74,8 +74,8 @@ namespace ShaderSharp.Shaders
 		public int Index; // COLOR0, COLOR1, etc..
 		public SemanticAttributeAttribute(Semantics sem, int index)
 		{
-			this.Semantics = sem;
-			this.Index = index;
+			Semantics = sem;
+			Index = index;
 		}
 	}
 

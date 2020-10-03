@@ -315,8 +315,8 @@ namespace ShaderSharp
 						(p) => $"{(float)p:0.0#####################}")
 				},
 				{
-					 typeof(double),
-					 new TypeConverter(
+					typeof(double),
+					new TypeConverter(
 						 "double", "0.0d",
 						 (p) => $"{(float)p.Value:0.0###########################################}d",
 						 (p) => $"{(float)p:0.0###########################################}d")

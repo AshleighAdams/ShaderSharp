@@ -4,9 +4,9 @@ using DeferredTest.Shaders;
 
 namespace DeferredTest
 {
-	class Program
+	internal class Program
 	{
-		static void Main(string[] args)
+		private static void Main(string[] args)
 		{
 			var result = ShaderSharp.Shader.Compile<StandardDeferredShader>();
 
